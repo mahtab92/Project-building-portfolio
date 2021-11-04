@@ -1,0 +1,173 @@
+/* applies to all Css     need to add the css reseting */
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* applies to all header */
+.header-section{
+ background-color:#13293d;  
+height:70px;
+}
+
+/* for only h1, Myname */
+#desing-heading{
+    background-color:#1e90ff;
+    position: relative;
+    top: 15px;
+    width: 300px;
+    height: 40px;
+    text-align:right;
+    font-weight: bolder;
+    line-height: 150%;  
+    size: 20px;
+    
+}
+/* :hover */
+.header-section:hover #desing-heading{
+    background-color: pink;
+}
+
+/* Horizontal parent */
+
+.navigation {
+ display: flex;
+  list-style: none;
+  background-color: #13293d;
+  justify-content:right;
+  padding-inline-end: 4%;
+  flex-wrap: wrap;
+  justify-content:end;
+    gap: 10px;  
+}
+
+/* Horizontal child */
+.nav-link{
+ color:blanchedalmond;
+ display: flex;
+ font-size: larger;
+}
+
+/* title of the page*/
+.background{
+                /* background-image: image(../pictures/bush.png); */
+                    /* height: 300px; */
+width: 100%;
+height: 150px;
+background-color: black;
+
+}
+#subtitle{
+display: flex;
+background-color: aqua;
+width: 300px;
+}
+
+
+/* middle section */
+.about-me{
+    display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   align-items: stretch;
+   justify-content: space-between;
+
+}
+.about-me > h3 {
+    flex: 0 0 20%;
+    text-align: right;
+    border-right: 4px solid green; 
+    font-size: 3vw;
+    line-height: 1.1;
+    padding-right: 15px;
+}
+.about-me > div {
+    flex: 0 0 77%;
+}
+.about-me  p {
+    margin-bottom: 20px;
+}
+
+/* work section */
+.work-section{
+    display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   align-items: stretch;
+   justify-content: space-between;
+
+}
+.work-section > h4 {
+    flex: 0 0 20%;
+    text-align: right;
+    border-right: 4px solid green; 
+    font-size: 3vw;
+    line-height: 1.1;
+    padding-right: 15px;
+}
+.work-section > div {
+    flex: 0 0 77%;
+}
+
+.work-section > section{
+    flex: 0 0 77%;
+    margin-bottom: 20px;
+}
+.parent-boxes{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+   height: calc(50vh - 50px);
+    
+}
+/* .box-1{
+    display: flex;
+    width: 95%;
+    height: 190%;
+    margin: 10px;
+    background-image: image(../pictures/batthern.png);
+    border: 3px solid rgb(150, 34, 34);
+    
+   
+} */
+/* .box-2 {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    height: 250px;
+    width: 100px;
+    flex-direction: row;
+    border: 2px solid brown;
+}
+.box-3 {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    height: 250px;
+    width: 100px;
+    flex-direction: row;
+    border: 2px solid brown;
+} */
+
+.contact-me{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-between;
+ 
+}
+.contact-me > h5 {
+    flex: 0 0 20%;
+    text-align: right;
+    border-right: 4px solid green; 
+    font-size: 3vw;
+    line-height: 1.1;
+    padding-right: 15px;
+}
+
+.contact-me > div {
+    flex: 0 0 77%;
+}
