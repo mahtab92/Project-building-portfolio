@@ -1,26 +1,29 @@
-                            /* applies to all  */
+/* applies to all  */
 *{
    margin: 0;
    padding: 0;
    box-sizing: border-box;
    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-
+/* hovers */
 .background:hover #subtitle{
     background-color: coral;
 }
-                 /* :hover */
-.header-section:hover #desing-heading{
-    background-color: pink;
-}   
 
-                        /* applies to all header */
+.header-section:hover #desing-heading{
+    background-color: rgb(247, 176, 187);
+}   
+a:hover {
+    background-color: rgb(235, 161, 216);
+  }
+
+ /* applies to all header */
 .header-section{
  background-color:#13293d;  
 height:70px;
 }
 
-                            /* for only h1 */
+/* for only h1 */
 #desing-heading{
     background-color:#6babeb;
     position: relative;
@@ -32,8 +35,7 @@ height:70px;
     line-height: 150%;  
     size: 20px;   
 }
- /* Horizontal parent */
-
+ /* link tags */
 .navigation {
  display: flex;
   list-style: none;
@@ -44,7 +46,6 @@ height:70px;
   justify-content:end;
     gap: 10px;  
 }
-/* Horizontal child */
 .nav-link{
  color:blanchedalmond;
  display: flex;
@@ -66,10 +67,7 @@ justify-content: center;
 background-color: aqua;
 width: 320px;
 height: 66px;
-
 }
-
-
 /* middle section */
 .about-me{
     display: flex;
@@ -78,6 +76,7 @@ height: 66px;
    align-items: stretch;
    justify-content: space-between;
 }
+/* horizontal line */
 .about-me > h3 {
     flex: 0 0 20%;
     text-align: right;
@@ -95,7 +94,8 @@ height: 66px;
     margin-bottom: 20px;
 }
 
-/* work section */
+/* work section part one
+*/
 .work-section{
     display: flex;
    flex-direction: row;
@@ -121,15 +121,92 @@ height: 66px;
     flex: 0 0 77%;
     margin-bottom: 20px;
 }
-.parent-boxes{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-   height: calc(50vh - 50px);
-    
+/* grid boxes second section parent*/
+.container{
+    display: grid;
+    grid-auto-rows: 250px 100px 100px 100px 100px;
+    grid-template-areas: 
+    "header header ";
+    gap: 15px;
+    margin-right: 20px;
+}
+ /* container applied to all */
+.container > *{
+    display: grid;
+font-weight: bold;
+color: rgb(235, 171, 219);
+border: 4px solid black;
+flex-shrink: initial;
+}
+/* boxes second section child*/
+.grid-item-1{
+background-image: url(../pictures/background1.jpg);
+background-size: 100% 100%;
+background-repeat:none;
+grid-area: header;
+color: rgb(150, 34, 140);
 }
 
+.ONE {
+    display: flex;
+    width: 200px;
+    height: 100px;
+    border: 5px solid rgb(220, 231, 200);  
+    align-self: flex-end;
+}
 
+.grid-item-2{
+    background-image: url(../pictures/4.jpg);
+}
+.TWO {
+    display: flex;
+    width: 200px;
+    height: 80px;
+    border: 5px solid beige;
+    align-self: flex-end;  
+}
+.grid-item-3{
+    display: grid;
+    background-image: url(../pictures/2.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.THREE {
+    display: flex;
+    width: 200px;
+    height: 80px;
+    border: 5px solid beige; 
+    align-self: flex-end; 
+}
+
+.grid-item-4{
+    display: grid;
+    background-image: url(../pictures/cloudy.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.FOUR {
+    display: flex;
+    width: 200px;
+    height: 80px;
+    border: 5px solid beige;
+    align-self: flex-end;  
+}
+.grid-item-5{
+    display: grid;
+    background-image: url(../pictures/cloud.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+}
+.FIVE {
+    display: flex;
+    width: 200px;
+    height: 80px;
+    border: 5px solid beige; 
+    align-self: flex-end; 
+}
+/* contact me  Last section */
 .contact-me{
     display: flex;
     flex-direction: row;
@@ -148,9 +225,16 @@ height: 66px;
     padding-right: 15px;   
 }
 
-.contact-me > div {
+.contact-me > ul {
     flex: 0 0 77%;
 }
-a:hover {
-    background-color: rgb(245, 118, 171);
-  }
+
+@media all and (max-width: 480px) {
+    .header-section{
+        background-color: #6babeb;
+    }
+
+    {
+
+    }
+}
