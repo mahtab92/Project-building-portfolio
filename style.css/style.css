@@ -82,7 +82,7 @@ height: 66px;
     text-align: right;
     font-size: smaller;
     border-right: 4px solid rgb(5, 3, 126); 
-    font-size: 2.5vw;
+    font-size: 20px;
     font-weight: bold;
     line-height: 1.1;
     padding-right: 15px;  
@@ -108,7 +108,7 @@ height: 66px;
     flex: 0 0 20%;
     text-align: right;
     border-right: 4px solid rgb(5, 3, 126); 
-    font-size: 2.5vw;
+    font-size: 20px;
     font-weight: bold;
     line-height: 1.1;
     padding-right: 15px;
@@ -219,7 +219,7 @@ color: rgb(150, 34, 140);
     flex: 0 0 20%;
     text-align: right;
     border-right: 4px solid rgb(5, 3, 126); 
-    font-size: 2.5vw;
+    font-size: 20px;
     font-weight: bold;
     line-height: 1.1;
     padding-right: 15px;   
@@ -227,14 +227,4 @@ color: rgb(150, 34, 140);
 
 .contact-me > ul {
     flex: 0 0 77%;
-}
-
-@media all and (max-width: 480px) {
-    .header-section{
-        background-color: #6babeb;
-    }
-
-    {
-
-    }
 }
