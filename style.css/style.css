@@ -77,7 +77,7 @@ height: 66px;
    justify-content: space-between;
 }
 /* horizontal line */
-.about-me > h3 {
+.about-me > h4 {
     flex: 0 0 20%;
     text-align: right;
     font-size: smaller;
@@ -96,15 +96,18 @@ height: 66px;
 
 /* work section part one
 */
-.work-section{
+.Horizontal-line{
     display: flex;
    flex-direction: row;
    flex-wrap: wrap;
    align-items: stretch;
-   justify-content: space-between;
+   justify-content:flex-start;
 
 }
-.work-section > h4 {
+#border-line{
+    margin-right: 20px;
+}
+.Horizontal-line > h4 {
     flex: 0 0 20%;
     text-align: right;
     border-right: 4px solid rgb(5, 3, 126); 
@@ -113,23 +116,29 @@ height: 66px;
     line-height: 1.1;
     padding-right: 15px;
 }
-.work-section > div {
+.Horizontal-line > div {
     flex: 0 0 77%;
 }
 
-.work-section > section{
+.Horizontal-line > section{
     flex: 0 0 77%;
     margin-bottom: 20px;
 }
-/* grid boxes second section parent*/
-.container{
+
+.container {
     display: grid;
-    grid-auto-rows: 250px 100px 100px 100px 100px;
-    grid-template-areas: 
-    "header header ";
-    gap: 15px;
-    margin-right: 20px;
-}
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 10px 10px;
+    margin-right: 10px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "box1 box1 box1 box1"
+      "box1 box1 box1 box1"
+      "box2 box2 box3 box3"
+      "box4 box4 box5 box5";
+  }
+
  /* container applied to all */
 .container > *{
     display: grid;
@@ -139,92 +148,46 @@ border: 4px solid black;
 flex-shrink: initial;
 }
 /* boxes second section child*/
-.grid-item-1{
+#grid-item-1{
+grid-area: box1;
 background-image: url(../pictures/background1.jpg);
 background-size: 100% 100%;
 background-repeat:none;
-grid-area: header;
+/* grid-area: header; */
 color: rgb(150, 34, 140);
 }
 
-.ONE {
+.Label {
     display: flex;
-    width: 200px;
+    width: 30%;
     height: 100px;
     border: 5px solid rgb(220, 231, 200);  
     align-self: flex-end;
 }
-
-.grid-item-2{
+#grid-item-2{
+    grid-area: box2;
     background-image: url(../pictures/4.jpg);
 }
-.TWO {
-    display: flex;
-    width: 200px;
-    height: 80px;
-    border: 5px solid beige;
-    align-self: flex-end;  
-}
-.grid-item-3{
+
+#grid-item-3{
+    grid-area: box3;
     display: grid;
     background-image: url(../pictures/2.jpeg);
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
-.THREE {
-    display: flex;
-    width: 200px;
-    height: 80px;
-    border: 5px solid beige; 
-    align-self: flex-end; 
-}
-
-.grid-item-4{
+#grid-item-4{
+    grid-area: box4;
     display: grid;
     background-image: url(../pictures/cloudy.jpeg);
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
-.FOUR {
-    display: flex;
-    width: 200px;
-    height: 80px;
-    border: 5px solid beige;
-    align-self: flex-end;  
-}
-.grid-item-5{
+#grid-item-5{
+    grid-area: box5;
     display: grid;
     background-image: url(../pictures/cloud.jpeg);
     background-repeat: no-repeat;
     background-size: 100% 100%;
 
-}
-.FIVE {
-    display: flex;
-    width: 200px;
-    height: 80px;
-    border: 5px solid beige; 
-    align-self: flex-end; 
-}
-/* contact me  Last section */
-.contact-me{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: stretch;
-    justify-content: space-between;
-    list-style-type:square;
-}
-.contact-me > h5 {
-    flex: 0 0 20%;
-    text-align: right;
-    border-right: 4px solid rgb(5, 3, 126); 
-    font-size: 20px;
-    font-weight: bold;
-    line-height: 1.1;
-    padding-right: 15px;   
-}
-
-.contact-me > ul {
-    flex: 0 0 77%;
 }
