@@ -16,8 +16,24 @@
         font-size: 13px;
     }
 }
+@media (max-width: 670px) {
+    body {
+        display: block;
+    }
+    #desing-heading{
+        width: auto;
+    }
+    nav{
+        display: block;
+        position: absolute;
+        top: 7%;
+        min-width: 100%;
+    }
+   .navigation{
+       justify-content: center;
+   }
 
-  
+} 
 /* Media Query for low resolution  Tablets, Ipads */
 @media (max-width: 992px) {
     body {
